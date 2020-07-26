@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <title>Product.html</title>
+  </head>
+  <body>
+<!-- Header -------------------------------------------------------------------------------------------------------------------------------->
+    <div class="container">
+      <header class="header">
+        <div class="row">
+            <div class="col-lg col-xl d-sm-none d-none d-md-none d-lg-block d-xl-block">
+              <span>Telephone 099452325</span>
+            </div>
+            <div class="col-lg col-xl d-sm-none d-none d-md-none d-lg-block d-xl-block">
+              <span>Welcome to the Technical shop!</span>
+            </div>
+            <div class="col-4 col-sm-4 col-md-5 col-lg-3 col-xl-3" style="margin: 13px;">
+               <select class="custom-select col-lg" style="border: none; border-bottom: 2px solid gray;">
+                  <option selected>ENG</option>
+                  <option value="1">РУС</option>
+                  <option value="2">ՀԱՅ</option>
+                </select>
+            </div>
+            <div class="col-6 col-sm-5 col-md-6 col-lg-3 col-xl-3" style="margin: 13px;">
+               <select class="custom-select col-lg" style="border: none; border-bottom: 2px solid gray;">
+                  <option selected>֏</option>
+                  <option value="1">$</option>
+                  <option value="2">₽</option>
+               </select>
+            </div>
+          <div class=".col col-sm col-md col-lg-2 col-xl d-none d-sm-none d-md-none d-lg-block d-xl-block">
+              <button type="button" class="btn btn-primary" style="margin: 14px;">Wish list<span class="badge badge-light">9</span></button>
+          </div>
+        </div>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="index.html"><img src="https://img-corp.net/assets/img/IMG_logo_big_blue.png" alt="#"with="40px" height="45px" style="margin: 3px;"></a><a class="navbar-brand" href="#"></a>
+                <form class="form-inline">
+                  <input class="form-control mr-sm-2 d-sm-none d-none d-md-none d-lg-block d-xl-block" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0 d-sm-none d-none d-md-none d-lg-block d-xl-block" type="submit" style="border-color: #2d3092; color: #2d3092;">Search</button>
+                       <div class="dropdown col-4 col-lg-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 My Account
+                           </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginmodal">Login</a>
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#regmodal">Register</a>
+                   <a class="dropdown-item" href="#">My orders</a>
+                   <a class="dropdown-item" href="#">Accout Setings</a>
+                       </div>
+                      </div>
+                  </form>
+                </nav>
+            </div>
+          </div>
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #2D3092;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto col-lg col-xl" style="text-align: center;">
+              <li class="nav-item dropdown col-lg col-xl" Style="list-style-type: none;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                  TVs
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Sony</a>
+                    <a class="dropdown-item" href="#">Samsung</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">philips</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown col-lg col-xl" Style="list-style-type: none;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                  Camers
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Sony</a>
+                    <a class="dropdown-item" href="#">Canon</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Instax</a>
+                </div>
+                </li>
+                <li class="nav-item dropdown col-lg col-xl" Style="list-style-type: none;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                  Obectives
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Canon</a>
+                    <a class="dropdown-item" href="#">Evo</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Somethings else</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown col-lg col-xl" Style="list-style-type: none;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                  laptops
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Dell</a>
+                    <a class="dropdown-item" href="#">Asus</a>
+                    <a class="dropdown-item" href="#">Lenovo</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Hp</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown col-lg col-xl" Style="list-style-type: none;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                  Speakers
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Jbl</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown col-lg col-xl" Style="list-style-type: none;">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                    Playstation
+                  </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Playstation</a>
+                    <a class="dropdown-item" href="#">Xbox</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+</div><br>
+<!-- Header END ------------------------------------------------------------------------------------------------------------------------------------>
+<!-- little Navbar -------------------------------------------------------------------------------------------------------------------------------->
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Tvs</a></li>
+          <li class="breadcrumb-item"><a href="shop.html">tv</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Xiaomi Mi TV 4S 55inch</li>
+        </ol>
+      </nav>
+    </div>
+  </div>  
+<!-- little Navbar END -------------------------------------------------------------------------------------------------------------------------------->
+<!-- Modals -------------------------------------------------------------------------------------------------------------------------------->
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div class="row" style="text-align: center;">
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 mb-auto mt-auto d-none d-sm-none d-md-none d-lg-block d-xl-block">
+              <a data-fancybox="gallery" href="https://www.mobilecentre.am/img/prodpic/2a28ac9c5889b3178fff1.jpg"><img src="https://www.mobilecentre.am/img/prodpic/2a28ac9c5889b3178fff1.jpg" class="img-fluid"></a>
+              <a data-fancybox="gallery" href="https://www.mobilecentre.am/img/prodpic/2a28ac9c5889b3178fff1.jpg"><img src="https://www.mobilecentre.am/img/prodpic/2a28ac9c5889b3178fff1.jpg" class="img-fluid"></a>
+              <a data-fancybox="gallery" href="https://www.mobilecentre.am/img/prodpic/2a28ac9c5889b3178fff1.jpg"><img src="https://www.mobilecentre.am/img/prodpic/2a28ac9c5889b3178fff1.jpg" class="img-fluid"></a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+              <a data-fancybox="gallery" href="https://www.mobilecentre.am/img/prodpic/2a28ac9c5889b3178fff1.jpg"><img src="https://www.mobilecentre.am/img/prodpic/2a28ac9c5889b3178fff1.jpg" class="img-fluid"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-auto mb-auto d-block d-sm-block d-md-block d-lg-block d-xl-block">
+          <div class="row mb-4">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mt-auto mb-auto mr-auto ml-auto">
+                  <a href="">Xiaomi Mi TV 4S 55inch</a>
+                  <ul>
+                    <li>4K+HDR -> Dolby + DTS</li>
+                    <li>PatchWall -> More content</li>
+                    <li>Easy useing -> 64-bit Quad-core processor</li>
+                    <li>Big Completely -> number of ports metal case</li>
+                  </ul><hr width="200px;">
+                  <div style="text-align: center;">
+                    <span style="font-size: 18px;">Price: 329,000֏</span>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mb-auto mt-auto" style="text-align: center;">
+                    <span>| Colors |</span><hr width="200px;">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">White</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineCheckbox2" value="option2">
+                      <label class="form-check-label" for="inlineCheckbox2">Black</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineCheckbox3" value="option3" disabled>
+                      <label class="form-check-label" for="inlineCheckbox3">Else (disabled)</label>
+                    </div><hr width="200px;">
+                  <form>
+                    <div class="col-auto mr-auto ml-auto" style="width: 300px;">
+                      <label class="sr-only" style="width: 200px;" for="inlineFormInputGroup">many</label>
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">№</div>
+                          </div>
+                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="How many?.">
+                      </div>
+                    </div>
+                  </form><hr width="300px;">
+                  <button class="btn btn-primary">Add to Card</button>
+                  <button class="btn btn-secondary">Back</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--<a href="">Xiaomi Mi TV 4S 55inch</a>
+          <ul>
+            <li>4K+HDR -> Dolby + DTS</li>
+            <li>PatchWall -> More content</li>
+            <li>Easy useing -> 64-bit Quad-core processor</li>
+            <li>Big Completely -> number of ports metal case</li>
+          </ul>
+            <span>Price: 329,000֏</span>
+          <form>
+            <div class="col-auto">
+              <label class="sr-only" style="width: 200px;" for="inlineFormInputGroup">many</label>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">Many</div>
+                  </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+              </div>
+            </div>
+          </form>
+          <button class="btn btn-primary">Add to Card</button>
+          <button class="btn btn-secondary">-----------</button>-->
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Specifications #1
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                  <div class="row">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                      <span>| Display</span>
+                      <ul>
+                        <li>Type of IPS matrix</li>
+                        <li>Screen coverage is glossy (anti-glare)</li>
+                        <li>Resolution 3840x2160 pixels</li>
+                        <li>Battery capacity:4000 mAh</li>
+                        <li>Response time 8 MS</li>
+                        <li>Frame rate 60 Hz</li>
+                        <li>Vertical viewing angle 178 °</li>
+                        <li>Horizontal viewing angle 178 °</li>
+                        <li>Support for HDR HDR10</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                      <span>| General</span>
+                      <ul>
+                        <li>Internal memory 8 GB</li>
+                        <li>RAM 1 GB</li>
+                        <li>Power consumption 75 W</li>
+                        <li>Weight: 172 g</li>
+                        <li>Dimensions (WxHxD) 964x606x233 mm / with stand /</li>
+                        <li>Weight 7.6 kg / with stand /</li>
+                        <li>Date added to E-Katalog November 2018</li>
+                      </ul>  
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Description #2
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              <ul>
+                <li>Screen:43 ", 3840x2160 pixels</li>
+                <li>60 Hz Picture:Hdr</li>
+                <li>multimedia:Android TV, Wi-Fi, LAN</li>
+              </ul>
+              <span>A potential bestseller in the budget segment of "smart" TVs of medium diagonal. The brainchild of Xiaomi captivates 4K-resolution images on the display of 43-inch dimensions, support for HDR for the benefit of increasing the realism of color reproduction, juicy and detailed picture as a whole. For the effect of full immersion, Xiaomi Mi TV 4S 43 was equipped with a 16-watt audio system with dual Dolby Atmos + DTS decoding. The "smart" subsystem of the model uses a PatchWall substrate based on the Android TV operating system. The smart component of the TV panel is highlighted by an extensive list of compatible applications and streaming services, as well as the Google Assistant voice assistant (called from a remote control with a built-in microphone). But for digital tuners in the bins of the TV, there was no place, which is why you will need to get an external T2 receiver to broadcast terrestrial TV programs. Connecting third-party devices to the TV panel is implemented through the interface connectors USB (2 PCs.), HDMI (2 PCs.), component and composite video inputs.</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                About it #3
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              A potential bestseller in the budget segment of "smart" TVs of medium diagonal. The brainchild of Xiaomi captivates 4K-resolution images on the display of 43-inch dimensions, support for HDR for the benefit of increasing the realism of color reproduction, juicy and detailed picture as a whole. For the effect of full immersion, Xiaomi Mi TV 4S 43 was equipped with a 16-watt audio system with dual Dolby Atmos + DTS decoding. The "smart" subsystem of the model uses a PatchWall substrate based on the Android TV operating system. The smart component of the TV panel is highlighted by an extensive list of compatible applications and streaming services, as well as the Google Assistant voice assistant (called from a remote control with a built-in microphone). But for digital tuners in the bins of the TV, there was no place, which is why you will need to get an external T2 receiver to broadcast terrestrial TV programs. Connecting third-party devices to the TV panel is implemented through the interface connectors USB (2 PCs.), HDMI (2 PCs.), component and composite video inputs.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr width="300px">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12col-lg-12 col-xl-12" style="background-color: #E9ECEF; text-align: center; padding: 7px;">
+        <a href="#" style="text-decoration: none; color: black; list-style-type: none; font-size: 20px;">You may also like</a>
+        <!--<span style="color: gray; font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>-->
+      </div>
+    </div><hr width="300px">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-6 col-lg col-xl" style="margin-top: 7px;">
+            <div class="card" style="text-align: center;">
+              <a href="#"><img src="https://www.mobilecentre.am/img/prodpic/101689.jpg" class="img-fluid" width="514.38" height="514.38"></a>
+              <div class="card-body">
+                <h5 class="card-title">Samsung UE43J5202AUX</h5>
+                <span class="card-text" style="color: gray">Some quick example text to build on the card title and make up the bulk of the card's content.</span><br><br>
+                <span>Price: </span><span style="text-decoration: line-through;">168,651֏</span><span>-></span><span style="margin-left: 7px;">126,000֏</span>
+              </div>
+            </div>
+          </div> 
+          <div class="col-12 col-sm-12 col-md-6 col-lg col-xl" style="margin-top: 7px;">
+            <div class="card" style="text-align: center;">
+              <a href="#"><img src="https://www.mobilecentre.am/img/prodpic/102942.jpg" class="img-fluid"></a>
+              <div class="card-body">
+                <h5 class="card-title">Samsung UE32N5300AUX</h5>
+                <span class="card-text" style="color: gray">Some quick example text to build on the card title and make up the bulk of the card's content.</span><br><br>
+                <span>Price: </span><span style="text-decoration: line-through;">110,434֏</span><span>-></span><span style="margin-left: 7px;">92,000֏</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg col-xl" style="margin-top: 7px;">
+            <div class="card" style="text-align: center;">
+              <a href="#"><img src="https://www.mobilecentre.am/img/prodpic/70da273d727d25a1fb111.jpg" class="img-fluid"></a>
+              <div class="card-body">
+                <h5 class="card-title">Xiaomi Mi TV 4S 55inch</h5>
+                <span class="card-text" style="color: gray">Some quick example text to build on the card title and make up the bulk of the card's content.</span><br><br>
+                <span>Price: </span><span style="text-decoration: line-through;">328,900֏</span><span>-></span><span style="margin-left: 7px;">289,000֏</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg col-xl" style="margin-top: 7px;">
+            <div class="card" style="text-align: center;">
+              <a href="#"><img src="https://www.mobilecentre.am/img/prodpic/4f978dbb555d3596c0821.png" class="img-fluid"></a>
+              <div class="card-body">
+                <h5 class="card-title">Samsung UE62N5300AUX</h5>
+                <span class="card-text" style="color: gray">Some quick example text to build on the card title and make up the bulk of the card's content.</span><br><br>
+                <span>Price: </span><span style="text-decoration: line-through;">579,900֏</span><span>-></span><span style="margin-left: 7px;">542,000֏</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg col-xl" style="margin-top: 7px;">
+            <div class="card" style="text-align: center;">
+              <a href="#"><img src="https://www.mobilecentre.am/img/prodpic/113229.jpg" class="img-fluid"></a>
+              <div class="card-body">
+                <h5 class="card-title">Samsung UE62N5300AUX</h5>
+                <span class="card-text" style="color: gray">Some quick example text to build on the card title and make up the bulk of the card's content.</span><br><br>
+                <span>Price: </span><span style="text-decoration: line-through;">579,900֏</span><span>-></span><span style="margin-left: 7px;">542,000֏</span>
+              </div>
+            </div>
+          </div>
+        </div><hr width="300px;">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ml-auto mr-auto">
+            <div>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                  </li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Fotter -------------------------------------------------------------------------------------------------------------------------------->
+<fotter class="fotter">
+      <div class="container">
+      <div class="row">
+         <a href="#" style="background-color: #2d3092; color: white" class="list-group-item list-group-item-action text-uppercase font-weight-bold text-center col-lg-3 col-sm-12">
+                Contact us
+              </a>
+         <a href="#" style="background-color: #2d3092; color: white" class="list-group-item list-group-item-action text-uppercase font-weight-bold text-center col-lg-3 col-sm-12">
+                Contact us
+              </a>
+         <a href="#" style="background-color: #2d3092; color: white" class="list-group-item list-group-item-action text-uppercase font-weight-bold text-center col-lg-3 col-sm-12">
+                Contact us
+              </a>
+         <a href="#" style="background-color: #2d3092; color: white" class="list-group-item list-group-item-action text-uppercase font-weight-bold text-center col-lg-3 col-sm-12">
+                Contact us
+              </a>
+      </div>
+      <div class="row">
+        <div class ="col-lg d-none d-lg-block d-xl-block pr-0 border">
+            <ul class="list-group">
+                <h5 class="">TVs</h5>
+                <a href="#" class="action">TVs/sony</a>
+                <a href="#" class="=action">TVs/samsung</a>
+                <a href="#" class="=action">TVs/philips</a>
+                <a href="#" class="=action">TVs/xiaomi</a>
+              </ul>   
+        </div>
+                <div class ="col-lg d-none d-lg-block d-xl-block pr-0 border">
+            <ul class="list-group">
+                <h5 class="">Camers</h5>
+                <a href="#" class="action">Camers/sony</a>
+                <a href="#" class="=action">Camers/canon</a>
+                <a href="#" class="=action">Camers/Instax</a>
+              </ul>   
+        </div>
+                <div class ="col-lg d-none d-lg-block d-xl-block pr-0 border">
+            <ul class="list-group">
+                <h5 class="">Obectives</h5>
+                <a href="#" class="action">Obectives/canon</a>
+              </ul>   
+        </div>
+                <div class ="col-lg d-none d-lg-block d-xl-block pr-0 border">
+            <ul class="list-group">
+                <h5 class="">Laptops/Playstaiton</h5>
+                <a href="#" class="action">laptop/hp,lenovo,asus,dell</a>
+                <a href="#" class="action">Sony/playstaiton</a>
+                <a href="#" class="=action">Minecrasoft/xbox</a>
+              </ul>   
+        </div>
+                <div class ="col-lg d-none d-lg-block d-xl-block pr-0 border">
+            <ul class="list-group">
+                <h5 class="">Speakers</h5>
+                <a href="#" class="action">Speaker/jbl</a>
+                <a href="#" class="=action">Speaker/Any</a>
+                <a href="#" class="=action">Speaker/any</a>
+              </ul>   
+        </div>
+      </div>
+        <div class="row">
+          <div class ="col-lg d-lg-block d-xl-block pr-0 border">
+            <ul class="list-group" style="list-style-type: none;">
+             <li>Find us in:</li>
+              <li>
+           <a href=""><img src="https://img.icons8.com/ios-filled/72/discord-logo.png" style="width: 32px;" alt=""></a>
+           <a href=""><img src="https://img.icons8.com/ios-filled/72/instagram-new.png" style="width: 32px;" alt=""></a>
+           <a href=""><img src="https://img.icons8.com/ios-filled/72/facebook.png" style="width: 32px;" alt=""></a>
+           <a href=""><img src="https://img.icons8.com/ios-filled/2x/ok-message.png" style="width: 32px;" alt=""></a>
+            </li>
+          </ul>
+        </div>
+          <div class ="col-lg d-lg-block col pr-0 border">
+            <ul class="list-group">
+              <li>© Tumo Center For Ccreative Technologies</li> 
+         </div>
+       </div>
+    </div>
+</fotter>
+<!-- Fotter END -------------------------------------------------------------------------------------------------------------------------------->
+<!-- Modal login in -------------------------------------------------------------------------------------------------------------------------------->
+<div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div style="text-align: left;" class="modal-content">
+      <div class="modal-header" style="background-color: #2d3092;">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: white;">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input style="border: none; border-bottom: 2px solid gray;" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input style="border: none; border-bottom: 2px solid gray;" type="password" class="form-control" id="exampleInputPassword1">
+            <small id="emailHelp" class="form-text text-muted">And password to.</small>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Login in</button>
+      </div>
+    </div>
+  </div>
+</div><br>
+<!-- Modal login in END -------------------------------------------------------------------------------------------------------------------------------->
+<!-- Modal register -------------------------------------------------------------------------------------------------------------------------------->
+<div class="modal fade" id="regmodal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div style="text-align: left;" class="modal-content">
+      <div class="modal-header" style="background-color: #2d3092;">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: white;">Register</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">First name</label>
+            <input style="border: none; border-bottom: 2px solid gray;" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">Your name.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Last name</label>
+            <input style="border: none; border-bottom: 2px solid gray;" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">Your surename.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input style="border: none; border-bottom: 2px solid gray;" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input style="border: none; border-bottom: 2px solid gray;" type="password" class="form-control" id="exampleInputPassword1">
+            <small id="emailHelp" class="form-text text-muted">We'll never share or tall your password with anyone else..</small>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+          </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Accept password</label>
+            <input style="border: none; border-bottom: 2px solid gray;" type="password" class="form-control" id="exampleInputPassword1">
+            <small id="emailHelp" class="form-text text-muted">We'll never share or tall your password with anyone else..</small>
+         <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+      </div>
+    </form>
+      </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal register END -------------------------------------------------------------------------------------------------------------------------------->
+<!-- Modals END -------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  </body>
+</html>
