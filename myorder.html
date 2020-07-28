@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Myorder.html</title>
   </head>
   <body>
     <!-- Header ------------------------------------------------------------------------------------------------------------------------------------> 
@@ -161,7 +161,7 @@
   <div class="row">
     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
       <div class="row">
-        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 d-none d-sm-none d-md-block d-lg-block d-xl-block">
           <a href="" style="color: black;">Profile</a>
           <ul>
             <a href=""><li>Billing an Shipping</li></a>
@@ -179,32 +179,46 @@
             <a href=""><li>Tax Exempt</li></a>
           </ul></a>
         </div>
-        <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9" style="border: 1px solid rgba(0,0,0,.125);">
+        <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9" style="border: 1px solid rgba(0,0,0,.125);">
           <span style="font-size: 25px; color: #2D3092;">Account detals</span>
           <p style="font-size: 15px; color: gray;">Update your countact information.</p>
-          <div><br>
+            <div><br>
             <table class="table bg-white">
-               <thead style="text-align: center;">
-                 <tr>
-                   <th style="text-align: left;">Account information</th>
-                   <th>...</th>
-                   <th>Date</th>
-                 </tr>
-              </thead>
               <tbody style="text-align: left;">
                 <tr>
+                  <td>Language</td>
+                  <td>...</td>
+                  <td><select class="form-control"><option selected>ENG</option><option value="1">РУС</option><option value="2">ՀԱՅ</option></select></td>
+                </tr>
+                <tr>
+                  <td>Currency</td>
+                  <td>...</td>
+                  <td><select class="form-control"><option selected>֏</option><option value="1">$</option><option value="2">₽</option></select></td>
+                </tr>
+               </tbody>
+            </table>
+          </div>
+          <div><br>
+            <table class="table bg-white">
+              <tbody style="text-align: left;">
+                <tr>
+                  <td>+374 ** ** ** **</td>
+                  <td style="text-align: center;"><a href="" data-toggle="modal" data-target="#exampleModal4">Edit</a></td>
+                  <td style="text-align: center;">28.07.2020Y</td>
+                </tr>
+                <tr>
                   <td>Stepan Hakobyan</td>
-                  <td style="text-align: center;"><a href="">Edit</a></td>
+                  <td style="text-align: center;"><a href="" data-toggle="modal" data-target="#exampleModal">Edit</a></td>
                   <td style="text-align: center;">28.07.2020Y</td>
                 </tr>
                 <tr>
                   <td>Stepan.Hakobyan.y@tumo.org</td>
-                  <td style="text-align: center;"><a href="">Edit</a></td>
+                  <td style="text-align: center;"><a href="" data-toggle="modal" data-target="#exampleModal1">Edit</a></td>
                   <td style="text-align: center;">28.07.2020Y</td>
                 </tr>
                 <tr>
                   <td>***********</td>
-                  <td style="text-align: center;"><a href="">Edit</a></td>
+                  <td style="text-align: center;"><a href="" data-toggle="modal" data-target="#exampleModal2">Edit</a></td>
                   <td style="text-align: center;">28.07.2020Y</td>
                  </tr>
                </tbody>
@@ -216,33 +230,96 @@
               <tbody style="text-align: left;">
                 <tr>
                   <td>Stepan Hakobyan | Paruyr Sevak St | ARM0083 | Yerevan 3233 AM</td>
+                  <td><a href="" class="mt-auto mb-auto" data-toggle="modal" data-target="#exampleModal3">Edit </a><span>/</span><a href="" data-toggle="modal" data-target="#exampleModalremove"> Remove</a></td>
                 </tr>
                 <tr>
                   <td>Stepan Hakobyan | Koryun St | ARM4213 | Yerevan 4333 AM</td>
+                  <td><a href="" class="mt-auto mb-auto" data-toggle="modal" data-target="#exampleModal3">Edit </a><span>/</span><a href="" data-toggle="modal" data-target="#exampleModalremove"> Remove</a></td>
                 </tr>
                 <tr>
                   <td>Stepan Hakobyan | David Anaxti St | ARM0125 | Yerevan 3435 AM</td>
+                  <td><a href="" class="mt-auto mb-auto" data-toggle="modal" data-target="#exampleModal3">Edit </a><span>/</span><a href="" data-toggle="modal" data-target="#exampleModalremove"> Remove</a></td>
                 </tr>
                 <tr>
                   <td>Stepan Hakobyan | Araratyan St | ARM0083 | Yerevan 1243 AM</td>
+                  <td><a href="" class="mt-auto mb-auto" data-toggle="modal" data-target="#exampleModal3">Edit </a><span>/</span><a href="" data-toggle="modal" data-target="#exampleModalremove"> Remove</a></td>
                 </tr>
                </tbody>
             </table>
           </div><hr>
           <span style="font-size: 25px; color: #2D3092;">Payment options</span>
-          <p style="color: gray;">Empty...</p><hr>
-          <span style="font-size: 25px;color: #2D3092;">Email</span>
-          <p style="color: gray;">Update your email.</p>
-             <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">@</span>
-              </div>
-              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          <div><br>
+            <table class="table bg-white">
+              <tbody style="text-align: center;">
+                <tr>
+                  <td style="text-align: left;">Stepan Hakobyan | 27Y</td>
+                  <td><a href="" data-toggle="modal" data-target="#exampleModal3">Edit </a><span>/</span><a href="" data-toggle="modal" data-target="#exampleModalremove"> Remove</a></td>
+                  <td>28.07.2020Y</td>
+                </tr>
+                <tr>
+                  <td style="text-align: left;">XXXX-XXXX-XXXX-XXXX</td>
+                  <td><a href="" data-toggle="modal" data-target="#exampleModal3">Edit </a><span>/</span><a href="" data-toggle="modal" data-target="#exampleModalremove"> Remove</a></td>
+                  <td>28.07.2020Y</td>
+                </tr>
+                <tr>
+                  <td style="text-align: left;">07/24</td>
+                  <td><a href="" data-toggle="modal" data-target="#exampleModal3">Edit </a><span>/</span><a href="" data-toggle="modal" data-target="#exampleModalremove"> Remove</a></td>
+                  <td>28.07.2020Y</td>
+                </tr>
+                <tr>
+                  <td style="text-align: left;">XXX</td>
+                  <td><a href="" data-toggle="modal" data-target="#exampleModal3">Edit </a><span>/</span><a href="" data-toggle="modal" data-target="#exampleModalremove"> Remove</a></td>
+                  <td>28.07.2020Y</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <span style="font-size: 25px;color: #2D3092;">Guard</span>
+          <p style="color: gray;">Defend...</p><hr>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="row">
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                  <img src="img/png-transparent-anti-virus-application-icon-angle-brand-green-shield-ok-angle-logo-small-flat-removebg-preview (2).png" class=" img-fluid" style="padding: 30px;">
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 mt-auto mb-auto">
+                  <span style="font-size: 25px; color: #2D3092;">Your email address and any information is protected.</span>
+                  <p style="font-size: 15px; color: gray;">Unlike many similar groups, we do not make any distinctions based on the geographical location of users. Although our community specializes in news in Russian and in the Russian region as a whole, we do not mind that users from other countries join our discussions.</p>
+                </div>
+              </div><hr>
             </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="row">
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                  <img src="img/png-transparent-anti-virus-application-icon-angle-brand-green-shield-ok-angle-logo-small-flat-removebg-preview (2).png" class=" img-fluid" style="padding: 30px;">
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 mt-auto mb-auto">
+                  <span style="font-size: 25px; color: #2D3092;">Your telephone number and payment information is protected.</span>
+                  <p style="font-size: 15px; color: gray;">Unlike many similar groups, we do not make any distinctions based on the geographical location of users. Although our community specializes in news in Russian and in the Russian region as a whole, we do not mind that users from other countries join our discussions.</p>
+                </div>
+              </div><hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="row">
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                  <img src="img/png-transparent-anti-virus-application-icon-angle-brand-green-shield-ok-angle-logo-small-flat-removebg-preview (2).png" class=" img-fluid" style="padding: 30px;">
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 mt-auto mb-auto">
+                  <span style="font-size: 25px; color: #2D3092;">Your countact inforamtion is protected. 2/2</span>
+                  <p style="font-size: 15px; color: gray;">Unlike many similar groups, we do not make any distinctions based on the geographical location of users. Although our community specializes in news in Russian and in the Russian region as a whole, we do not mind that users from other countries join our discussions.</p>
+                </div>
+              </div><hr>
+            </div>
+          </div>
+          <!--<p style="color: gray;">Update your email.</p>
             <p style="font-size: 12px; color: gray;">We'll never share your email with anyone else.</p>
           <form>
             <button type="button" class="btn btn-primary btn-md">Change</button>
-          </form><br>
+          </form><br>-->
         </div>
       </div>
     </div>
@@ -250,6 +327,184 @@
 </div>
 
 <!-- Modals -------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- Remove-1 -------------------------------------------------------------------------------------------------------------------------------->
+<div class="modal fade" id="exampleModalremove" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabelremove">Remove adress</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Adress" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <p style="font-size: 12px; color: gray;">Write the word "delete" here to delete your address.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Remove-1 END -------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- Edit-1 -------------------------------------------------------------------------------------------------------------------------------->
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel3">Change adress</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Adress" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <p style="font-size: 12px; color: gray;">Whrite there your adress(Real).</p>
+        <p style="font-size: 17px; color: gray;">What about the adress.</p>
+        <ul>
+          <li style="font-size: 12px; color: gray;">You know.</li>
+          <li style="font-size: 12px; color: gray;">Nothing.</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Edit-1 END -------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- Edit -------------------------------------------------------------------------------------------------------------------------------->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Change username</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <p style="font-size: 12px; color: gray;">Whrite there your name(Real).</p>
+        <p style="font-size: 17px; color: gray;">What about the name.</p>
+        <ul>
+          <li style="font-size: 12px; color: gray;">You are only allowed to change your name once every two days.</li>
+          <li style="font-size: 12px; color: gray;">Do not put someone else's name instead of yours because this is the name that the product will be sent to, and if the data is incorrect, you will not be able to get it.</li>
+          <li style="font-size: 12px; color: gray;">And if the data is incorrect, we will not be able to contact you.</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Edit END -------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- Edit2 -------------------------------------------------------------------------------------------------------------------------------->
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Change email</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <p style="font-size: 12px; color: gray;">Whrite there your email(useing).</p>
+        <p style="font-size: 17px; color: gray;">What about the email.</p>
+        <ul>
+          <li style="font-size: 12px; color: gray;">Attach your work email to your account because it will receive notifications about purchases (Receipts).</li>
+          <li style="font-size: 12px; color: gray;">It will also help you get useful information about new products in the store.</li>
+          <li style="font-size: 12px; color: gray;">This will also protect you from fraudsters who want to try to log in to your account.</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Edit2 END -------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- Edit3 -------------------------------------------------------------------------------------------------------------------------------->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Change password</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <p style="font-size: 12px; color: gray;">WChoose a strong password to make it harder to find.</p>
+        <p style="font-size: 17px; color: gray;">What about the password.</p>
+        <ul>
+          <li style="font-size: 12px; color: gray;">Do not tell anyone your account password remember this is your confidential information and scammers can go to great lengths to own it .</li>
+          <li style="font-size: 12px; color: gray;">A password is something that allows you to log in to your account(account) if you tell someone you put your personal data at risk.</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Edit3 END -------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- Edit-4 -------------------------------------------------------------------------------------------------------------------------------->
+<div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel4">Change telephone</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Telephone number" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <p style="font-size: 12px; color: gray;">Whrite there your telephone nomber(useing).</p>
+        <p style="font-size: 17px; color: gray;">What about the telephone.</p>
+        <ul>
+          <li style="font-size: 12px; color: gray;">You know.</li>
+          <li style="font-size: 12px; color: gray;">Nothing.</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Edit-4 END -------------------------------------------------------------------------------------------------------------------------------->
+
 <!-- Modal login in -------------------------------------------------------------------------------------------------------------------------------->
 <div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
