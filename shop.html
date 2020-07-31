@@ -146,13 +146,37 @@
 <!-- Header END ------------------------------------------------------------------------------------------------------------------------------------>
 <!-- little Navbar -------------------------------------------------------------------------------------------------------------------------------->
 <div class="container">
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="index.html">Categproies</a></li>
-    <li class="breadcrumb-item"><a href="#">tv</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Data</li>
-  </ol>
-</nav>
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="row">
+        <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Categproies</a></li>
+              <li class="breadcrumb-item"><a href="#">tv</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding: 5px;">
+                  <select class="custom-select custom-select-md">
+                    <option selected>Sort by: &#8595;</option>  
+                    <option value="1">Price: Low to High. &#8593;</option>
+                    <option value="2">Price: High to Low. &#8595;</option>  
+                  </select> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+    
+  </div>
 <!-- little Navbar END -------------------------------------------------------------------------------------------------------------------------------->
 <div class="container">
   <div class="row">
@@ -414,7 +438,7 @@
       </div>
     </div>
   </div>
-      <div class="card">
+  <div class="card">
     <div class="card-header" id="headingThree">
       <h2 class="mb-0">
         <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFore" aria-expanded="false" aria-controls="collapseThree">
@@ -542,6 +566,48 @@
             <option>32 inch</option>
             <option>31.5 inch</option>
           </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefore">
+          Shipping/images' #5
+        </button>
+      </h2>
+    </div>
+    <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordionExample">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="row">
+              <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 mt-auto mb-auto mr-auto ml-auto">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck25">
+                  <label class="custom-control-label" for="customCheck25">With images only.</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 mt-auto mb-auto mr-auto ml-auto">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck25">
+                  <label class="custom-control-label" for="customCheck25">Free shipping.</label>
+                </div>
+              </div>
+            </div>
+            <hr width="150px;">
+            <div class="form-group">
+              <label for="exampleFormControlSelect2">Shipping/images' (Alternative)</label>
+              <select class="form-control" id="exampleFormControlSelect2">
+                <option>Default</option>
+                <option>With images only</option>
+                <option>Free shipping</option>
+              </select>
+            </div>
+          </div>
         </div>
       </div>
     </div>
